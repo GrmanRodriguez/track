@@ -58,7 +58,7 @@
     var myPath = [];
     markers = Array();
     var image = 'https://cdn0.iconfinder.com/data/icons/isometric-city-basic-transport/48/truck-front-01-48.png';
-    function initMap() {
+    $(document).ready(function initMap() {
             var myLatLng = {lat: parseFloat(lat), lng: parseFloat(lon)};
              var myOptions = {
                  zoom: 16,
@@ -100,7 +100,7 @@
                 dataType: "json"//set to JSON
               })
     });
-  }
+  });
         function addMarker(latLng, map) {
                    var marker = new google.maps.Marker({
                        position: latLng,
